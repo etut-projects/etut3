@@ -1,0 +1,115 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Common Features*/
+
+.nav {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left .image {
+  width: 60px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right .inp {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+}
+
+.left a {
+  color: #eae4d5;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.right .search-btn {
+  all: unset;
+  height: 34px;
+  width: 65px;
+  margin: 8px;
+  background-color: #090040;
+  border: 1px solid #eae4d5;
+  color: #eae4d5;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Navbar 1 */
+
+.nav1 {
+  background-color: #090040;
+}
+
+/* Navbar 2 */
+
+.nav2 {
+  background-color: #4a9782;
+  margin-top: 10px;
+}
+
+.nav2 .right .search-btn {
+  background-color: #4a9782;
+}
+
+/* Navbar 3*/
+
+.nav3 {
+  background-color: #ebffd8;
+  margin-top: 10px;
+}
+
+.nav3 .left a {
+  color: #090040;
+}
+
+.nav3 .right .inp {
+  border: 1px solid #c4e1e6;
+}
+.nav3 .right .search-btn {
+  background-color: #ebffd8;
+  border: 1px solid #c4e1e6;
+  color: #0abab5;
+}
+
+/* Navbar Responsive*/
+@media screen and (max-width: 700px) {
+  .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+  .left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    justify-content: center;
+  }
+}
